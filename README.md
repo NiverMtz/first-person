@@ -1,4 +1,4 @@
-# first-person
+# projecto-inicial-generation
 
 ## Requerimientos
 
