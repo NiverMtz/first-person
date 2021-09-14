@@ -1,3 +1,9 @@
-p {
-    border: 1px solid red;
+.container {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    gap: 18px;
+    padding: 5px;
+    margin: auto;
+    margin-block-start: 100px;
 }
