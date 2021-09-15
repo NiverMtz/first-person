@@ -20,6 +20,6 @@
 
 @media (min-width: 768px) {
     .button {
-        width:max-content;
+        width:100%;
     }
 }
