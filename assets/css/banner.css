@@ -21,6 +21,10 @@
     letter-spacing: 10px;
 }
 
+.banner__subtitle {
+    font: var(--heading1Font);
+}
+
 .banner__icon {
     display: flex;
     justify-content: flex-end;

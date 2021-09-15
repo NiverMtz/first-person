@@ -21,6 +21,8 @@
     --headerFont: 'Quantico', sans-serif;
 
     --buttonFont: bold 18px/23px var(--baseFont);
+    --heading1Font: 48px/65px var(--headerFont);
+    --parragraphFont: 20px/38px var(--baseFont);
 
     /* Others */
     --bodyGradient: linear-gradient( to bottom, #000D85, #7011CE, #FF5D53, #F5F95A);
