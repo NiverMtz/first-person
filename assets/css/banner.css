@@ -1,0 +1,32 @@
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/galactic-mountains-nomoon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner__content {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.banner__logo {
+    font-family: var(--brandFont);
+    font-size: 48px;
+    letter-spacing: 10px;
+}
+
+.banner__icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner__icon:hover,
+.banner__icon:active {
+    cursor: pointer;
+}
