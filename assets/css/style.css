@@ -1,15 +1,30 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap'); */
 
+@import url(../css/wrapper.css);
 @import url(../css/banner.css);
 @import url(../css/hero.css);
 @import url(../css/social-media.css);
+@import url(../css/button.css);
 
 :root {
+
+    /* Colors */
+    --marino: #000D85;
+    --morado: #7011CE;
+    --naranja: #FF5D53;
+    --amarillo: #F5F95A;
+    --white: white;
+
+    /* Fonts */
     --brandFont: 'Poppins', sans-serif;
     --baseFont: 'PT Sans', sans-serif;
     --headerFont: 'Quantico', sans-serif;
-    --white: white;
+
+    --buttonFont: bold 18px/23px var(--baseFont);
+
+    /* Others */
     --bodyGradient: linear-gradient( to bottom, #000D85, #7011CE, #FF5D53, #F5F95A);
+    --borderRadius: 10px;
 } 
 
 html {
@@ -63,5 +78,15 @@ img {
 }
 
 .icon--size {
-    width: 50px;
+    width: 30px;
+}
+
+@media (min-width: 768px) {
+    .icon--size {
+        width:50px
+    }
+}
+
+.form-api {
+    display: none;
 }

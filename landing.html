@@ -11,83 +11,133 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;700&family=Quantico:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__content">
-        <h2>¡Hola, seres extrañes!</h2>
-        <p>
-          Mi nombre es Revin y te saludo desde la galaxia 404. Soy Full Stack
-          Developer y he creado Galactic Code como un espacio en dónde ofrecer
-          mis servicios. En esta galaxia hay muchos sistemas solares y lunares
-          que requieren demasiados servicios, por lo que si quieres contactarme
-          te dejo mis redes. Aunque si es demasiado urgente y ya no puede
-          esperar más, entonces envíame un mensaje intergaláctico.
-        </p>
-        <div class="social-media">
-          <img class="icon--size" src="./assets/img/github.png" alt="GitHub" />
-          <img class="icon--size" src="./assets/img/linkedin.png" alt="Linkedin" />
-          <img class="icon--size" src="./assets/img/twitter.png" alt="Twitter" />
-          <img class="icon--size" src="./assets/img/facebook.png" alt="Facebook" />
-          <img class="icon--size" src="./assets/img/instagram.png" alt="Instagram" />
+    <div class="wrapper">
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <div class="hero__content">
+          <h2>¡Hola, seres extrañes!</h2>
+          <p>
+            Mi nombre es Revin y te saludo desde la galaxia 404. Soy Full Stack
+            Developer y he creado Galactic Code como un espacio en dónde ofrecer
+            mis servicios. En esta galaxia hay muchos sistemas solares y lunares
+            que requieren demasiados servicios, por lo que si quieres
+            contactarme te dejo mis redes. Aunque si es demasiado urgente y ya
+            no puede esperar más, entonces envíame un mensaje intergaláctico.
+          </p>
+          <div class="social-media">
+            <a href="" target="_blank">
+              <img
+                class="icon--size"
+                src="./assets/img/github.png"
+                alt="GitHub"
+              />
+            </a>
+            <a href="" target="_blank">
+              <img
+                class="icon--size"
+                src="./assets/img/linkedin.png"
+                alt="Linkedin"
+              />
+            </a>
+            <a href="" target="_blank">
+              <img
+                class="icon--size"
+                src="./assets/img/twitter.png"
+                alt="Twitter"
+              />
+            </a>
+            <a href="" target="_blank">
+              <img
+                class="icon--size"
+                src="./assets/img/facebook.png"
+                alt="Facebook"
+              />
+            </a>
+            <a href="" target="_blank">
+              <img
+                class="icon--size"
+                src="./assets/img/instagram.png"
+                alt="Instagram"
+              />
+            </a>
+          </div>
+          <button class="button">Mensaje intergaláctico</button>
         </div>
-        <button class="button">Mensaje intergaláctico</button>
-      </div>
-    </section>
-    <!-- END HERO -->
+      </section>
+      <!-- END HERO -->
 
-    <!-- API -->
-    <section class="form-api">
+      <!-- API  -->
+      <section class="form-api">
         <h2>¿Te gustaría ver una foto del espacio interestelar?</h2>
         <p>Sólo dame algunos datos:</p>
+
+        <!-- BOOTSTRAP SECTION -->
         <form class="row g-3">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="1234 Main St"
+            />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Apartment, studio, or floor"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" />
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
             </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-          </form>
-    </section>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+        <!-- END BOOTSTRAP SECTION -->
+      </section>
+    </div>
   </body>
 </html>

@@ -1,6 +1,11 @@
 .hero {
+    margin-block-end: 50px;
+    margin-block-start: 50px;
 }
 
 .hero__content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }

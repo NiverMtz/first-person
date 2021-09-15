@@ -1,0 +1,25 @@
+.button {
+    background-color: var(--amarillo);
+    color: var(--morado);
+    font: var(--buttonFont);
+    border-radius: var(--borderRadius);
+    padding: 15px;
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover,
+.button:active {
+    cursor: pointer;
+    background-color: var(--morado);
+    color: var(--amarillo);
+}
+
+@media (min-width: 768px) {
+    .button {
+        width:max-content;
+    }
+}
