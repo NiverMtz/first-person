@@ -1,5 +1,11 @@
 # projecto-inicial-generation
 
+## Mockup UX
+
+<img src="GitHub.png" width="50%"></img>
+    
+Para ver el diseño completo consulta el siguiente enlace: [UX en Figma](https://www.figma.com/file/vlOefJxyNJtI1snj84SOO4/projecto-inicial?node-id=16%3A47)
+
 ## Requerimientos
 
 - Frontend en HTML5, CSS3 y JS.
