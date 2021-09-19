@@ -1,0 +1,19 @@
+.footer {
+    background-color: var(--marino);
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding-block: 40px;
+}
+
+.footer__content h2 {
+    font: 700 36px/54px var(--brandFont);
+}
+
+.footer__content p {
+    font: 400 18px/25px var(--headerFont);
+}
