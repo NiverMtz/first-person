@@ -46,3 +46,51 @@
 #item3 blockquote, #item8 blockquote{
     margin: 0;
 }
+
+@media (min-width: 768px) {
+
+    .customers {
+        margin: 0;
+        padding: 180px 0px;
+    }
+
+    .customers__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:    "title galery"
+                                "textTitle galery"
+                                "textTitle galery";
+    }
+
+    .customers__content h2 {
+        grid-area: title;
+    }
+
+    .customers__content p {
+        grid-area: textTitle;
+    }
+
+    .customers__galery {
+        grid-area: galery;
+        grid-template-columns: repeat(4, 150px);
+        grid-template-rows: repeat(3, 150px);
+    }
+
+    .customers__galery--hidden {
+        grid-column: 4/5;
+        grid-row: 1/4;
+        display: grid;
+        grid-template-rows: repeat(3, 150px);
+        gap: 7px;
+    }
+
+    #item10,
+    #item11 {
+        display: block;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    #item12 {
+        display: block;
+    }
+}
