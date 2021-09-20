@@ -1,3 +1,8 @@
+.services {
+    margin: 50px 0px;
+    padding: 45px 20px;
+}
+
 .services__content {
     display: flex;
     flex-direction: column;
@@ -7,8 +12,4 @@
 
 .services__content img {
     max-width: 100%;
-}
-
-@media (min-width: 768px) {
-
 }
