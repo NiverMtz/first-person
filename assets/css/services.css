@@ -13,3 +13,37 @@
 .services__content img {
     max-width: 100%;
 }
+
+@media (min-width: 768px) {
+
+    .services {
+        margin: 0;
+        padding: 180px 100px;
+    }
+
+    .services__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:    "image title"
+                                "image textTitle"
+                                "image list";
+    }
+
+    .services__content h2 {
+        grid-area: title;
+    }
+
+    .services__content p {
+        grid-area: textTitle;
+    }
+
+    .services__content img {
+        grid-area: image;
+    }
+
+    .services__content ul {
+        grid-area: list;
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
