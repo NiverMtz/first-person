@@ -1,10 +1,13 @@
-/* fetch('https://api.nasa.gov/planetary/apod?api_key=BAKO9hbFf4bJYTTXAB0udACfhoA9rYw9VeNoCfBy&start_date=2017-07-08&end_date=2017-07-10')
-.then(data => data.json())
-.then(response => {
-    console.log(response);
-}) */
+const $form =  document.querySelector('#apod-form')
 
-let year = 2017
+$form.addEventListener('submit', handleSubmit)
+
+function handleSubmit(event){
+    event.preventDefault();
+    console.log("Hola mundo!")
+}
+
+/* let year = 2017
 let month = 07
 let day = 7
 
@@ -15,4 +18,4 @@ async function getData(year, month, day) {
     console.log(json);
 }
 
-getData(year, month, day)
+getData(year, month, day) */
