@@ -110,18 +110,51 @@
             </form>
           </div>
           <div class="col-sm-6">
-            <div class="card text-dark" style="width: 100%">
+            <div
+              id="apod-card"
+              class="card text-dark d-none"
+              style="width: 100%"
+            >
               <h1 id="apod-title" class="text-sm">
                 <!-- title -->
               </h1>
               <img id="apod-url" src="" class="card-img-top" alt="" />
               <div class="card-body">
                 <p id="apod-date" class="card-text">
-                  Date: 
+                  <!-- date -->
                 </p>
                 <p id="apod-explanation" class="card-text">
-                  Explanation: 
+                  <!-- explanation -->
                 </p>
+              </div>
+            </div>
+            <div id="apod-loader" class="container-fluid d-flex justify-content-center">
+              <div class="row">
+                <div class="col-2">
+                  <div class="spinner-grow text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="spinner-grow text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="spinner-grow text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="spinner-grow text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="spinner-grow text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
