@@ -30,6 +30,10 @@
     justify-content: flex-end;
 }
 
+.banner__icon img {
+    width: 70px;
+}
+
 .banner__icon:hover,
 .banner__icon:active {
     cursor: pointer;

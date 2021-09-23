@@ -11,3 +11,9 @@
         padding-inline-start: 50px;
     }
 }
+
+@media (min-width: 1440px) {
+    .wrapper {
+        max-inline-size: 1440px;
+    }
+}

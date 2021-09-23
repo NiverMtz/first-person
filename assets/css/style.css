@@ -83,7 +83,7 @@ p {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .icon--size {
@@ -98,6 +98,10 @@ img {
     max-width: 100rem;
     height: 50rem;
     background-color: rgba(255, 0, 0, 0.3);
+}
+
+.decoration-mountains {
+    width: 100%;
 }
 
 @media (min-width: 768px) {

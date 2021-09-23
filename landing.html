@@ -79,7 +79,7 @@
             </a>
           </div>
 
-          <button id="button1" class="button">Mensaje intergaláctico</button>
+          <a id="button1" class="button" href="#contact">Mensaje intergaláctico</a>
         </div>
       </section>
       <!-- END HERO -->
@@ -92,20 +92,20 @@
             <p>Sólo dame algunos datos:</p>
             <!-- BOOTSTRAP SECTION -->
             <form id="apod-form" class="row g-3">
-              <div class="col-md-10">
+              <div class="col-md-12 p-3">
                 <label for="inputCity" class="form-label">Un Año</label>
                 <input type="text" class="form-control" id="year" />
               </div>
-              <div class="col-md-10">
+              <div class="col-md-12">
                 <label for="inputCity" class="form-label">Un Mes</label>
                 <input type="text" class="form-control" id="month" />
               </div>
-              <div class="col-md-10">
+              <div class="col-md-12">
                 <label for="inputCity" class="form-label">Un Día</label>
                 <input type="text" class="form-control" id="day" />
               </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="button mt-5">Enviar</button>
               </div>
             </form>
           </div>
@@ -159,18 +159,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="card text-dark">
-          <div class="card-header">
-            Featured
-          </div>
-          <div id="apod" class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            <img id="apod-image" src="" alt="">
-          </div>
-        </div> -->
         <!-- END BOOTSTRAP SECTION -->
       </section>
       <!-- END FORM 1: SECTION WITH API  -->
@@ -413,7 +401,26 @@
       <!-- STORY3 END -->
 
       <!-- CONTACT -->
-      <section class="contact place-debug">here a form 2</section>
+      <section id="contact" class="contact">
+        <h3>Contacto</h3>
+        <form id="apod-form" class="row g-3">
+          <div class="col-md-10">
+            <label for="inputCity" class="form-label">Nombre: </label>
+            <input type="text" class="form-control" id="year" />
+          </div>
+          <div class="col-md-10">
+            <label for="inputCity" class="form-label">Email: </label>
+            <input type="text" class="form-control" id="month" />
+          </div>
+          <div class="col-md-10">
+            <label for="inputCity" class="form-label">Galaxia: </label>
+            <input type="text" class="form-control" id="day" />
+          </div>
+          <div class="col-12">
+            <button type="submit" class="button mt-5">Mensaje Intergalático</button>
+          </div>
+        </form>
+      </section>
       <!-- END CONTACT -->
     </div>
     <div class="decoration-mountains">
