@@ -4,18 +4,17 @@ $form.addEventListener('submit', handleSubmit)
 
 function handleSubmit(event){
     event.preventDefault();
-    console.log("Hola mundo!")
+    let year = document.getElementById("year").value;
+    let month = document.getElementById("month").value;
+    let day = document.getElementById("day").value;
+    getData(year, month, day)
+    event.target.reset()
 }
-
-/* let year = 2017
-let month = 07
-let day = 7
 
 async function getData(year, month, day) {
     const response = await
-    fetch(`https://api.nasa.gov/planetary/apod?api_key=BAKO9hbFf4bJYTTXAB0udACfhoA9rYw9VeNoCfBy&start_date=${year}-${month}-${day}&end_date=2017-07-10`)
+    fetch(`https://api.nasa.gov/planetary/apod?api_key=BAKO9hbFf4bJYTTXAB0udACfhoA9rYw9VeNoCfBy&start_date=${year}-${month}-${day}&end_date=${year}-${month}-${day  }`)
     const json = await response.json();
-    console.log(json);
+    const image = json[0].url;
+    document.getElementById("apod-image").setAttribute("src",image)
 }
-
-getData(year, month, day) */
