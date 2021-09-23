@@ -84,40 +84,60 @@
       </section>
       <!-- END HERO -->
 
-        <!-- <section class="place-debug">here a form 1</section> -->
-      <section class="">
-        <h2>¿Te gustaría ver una foto del espacio interestelar?</h2>
-        <p>Sólo dame algunos datos:</p>
+      <!-- <section class="place-debug">here a form 1</section> -->
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>¿Te gustaría ver una foto del espacio interestelar?</h2>
+            <p>Sólo dame algunos datos:</p>
+            <!-- BOOTSTRAP SECTION -->
+            <form id="apod-form" class="row g-3">
+              <div class="col-md-10">
+                <label for="inputCity" class="form-label">Un Año</label>
+                <input type="text" class="form-control" id="year" />
+              </div>
+              <div class="col-md-10">
+                <label for="inputCity" class="form-label">Un Mes</label>
+                <input type="text" class="form-control" id="month" />
+              </div>
+              <div class="col-md-10">
+                <label for="inputCity" class="form-label">Un Día</label>
+                <input type="text" class="form-control" id="day" />
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <div class="card text-dark" style="width: 100%">
+              <h1 id="apod-title" class="text-sm">
+                <!-- title -->
+              </h1>
+              <img id="apod-url" src="" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p id="apod-date" class="card-text">
+                  Date: 
+                </p>
+                <p id="apod-explanation" class="card-text">
+                  Explanation: 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <!-- BOOTSTRAP SECTION -->
-        <form id="apod-form" class="row g-3">
-          <div class="col-md-10">
-            <label for="inputCity" class="form-label">Un Año</label>
-            <input type="text" class="form-control" id="year" />
-          </div>
-          <div class="col-md-10">
-            <label for="inputCity" class="form-label">Un Mes</label>
-            <input type="text" class="form-control" id="month" />
-          </div>
-          <div class="col-md-10">
-            <label for="inputCity" class="form-label">Un Día</label>
-            <input type="text" class="form-control" id="day" />
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </div>
-        </form>
-        <div class="card text-dark">
+        <!-- <div class="card text-dark">
           <div class="card-header">
             Featured
           </div>
           <div id="apod" class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
             <img id="apod-image" src="" alt="">
           </div>
-        </div>
+        </div> -->
         <!-- END BOOTSTRAP SECTION -->
       </section>
       <!-- END FORM 1: SECTION WITH API  -->
@@ -232,8 +252,14 @@
             <div class="col order-2 order-lg-1">
               <div
                 id="carouselExampleCaptions"
-                class="w-100 carousel slide justify-content-center overflow-hidden"
-                style="height: 170px;"
+                class="
+                  w-100
+                  carousel
+                  slide
+                  justify-content-center
+                  overflow-hidden
+                "
+                style="height: 170px"
                 data-ride="carousel"
                 data-interval="1500"
               >

@@ -2,6 +2,10 @@ const $form =  document.querySelector('#apod-form')
 
 $form.addEventListener('submit', handleSubmit)
 
+var _explanation;
+var _title;
+var _date;
+
 function handleSubmit(event){
     event.preventDefault();
     let year = document.getElementById("year").value;
@@ -15,6 +19,12 @@ async function getData(year, month, day) {
     const response = await
     fetch(`https://api.nasa.gov/planetary/apod?api_key=BAKO9hbFf4bJYTTXAB0udACfhoA9rYw9VeNoCfBy&start_date=${year}-${month}-${day}&end_date=${year}-${month}-${day  }`)
     const json = await response.json();
-    const image = json[0].url;
-    document.getElementById("apod-image").setAttribute("src",image)
+    const { date, explanation, title, url } = json[0];
+    document.getElementById("apod-url").setAttribute("src", url)
+    _date = document.getElementById("apod-date")
+    _date.textContent += date;
+    _explanation = document.getElementById("apod-explanation")
+    _explanation.textContent += explanation;
+    _title = document.getElementById("apod-title")
+    _title.textContent += title
 }
