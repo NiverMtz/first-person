@@ -35,7 +35,8 @@
     </div>
 
     <div style="display:none;" id="myDiv" class="wrapper">
-      <!-- HERO -->
+      
+    <!-- HERO -->
       <section id="hero" class="hero">
         <div class="hero__content">
           <h2 class="hero__title">¡Hola, seres extrañes!</h2>
@@ -93,25 +94,25 @@
       </section>
       <!-- END HERO -->
 
-      <!-- <section class="place-debug">here a form 1</section> -->
+      <!-- SECTION FOR API  -->
       <section class="container-fluid my-5 py-5">
         <div class="row">
           <div class="col-lg-4">
             <h2>¿Te gustaría ver una foto del espacio interestelar?</h2>
             <p>Sólo dame algunos datos:</p>
             <!-- BOOTSTRAP SECTION -->
-            <form id="apod-form" class="row g-3">
+            <form id="apod-form" class="row g-3 input-group input-group-lg">
               <div class="col-md-12 p-3">
                 <label for="inputCity" class="form-label">Un Año</label>
-                <input type="text" class="form-control p-5 bg-transparent border-1 border-white" id="year" />
+                <input type="text" class="form-control p-md-1" id="year" />
               </div>
               <div class="col-md-12">
                 <label for="inputCity" class="form-label">Un Mes</label>
-                <input type="text" class="form-control p-5 bg-transparent border-1 border-white" id="month" />
+                <input type="text" class="form-control p-md-1" id="month" />
               </div>
               <div class="col-md-12">
                 <label for="inputCity" class="form-label">Un Día</label>
-                <input type="text" class="form-control p-5 bg-transparent border-1 border-white" id="day" />
+                <input type="text" class="form-control p-md-1" id="day" />
               </div>
               <div class="col-12">
                 <button type="submit" class="button mt-5">Enviar</button>
@@ -138,35 +139,6 @@
                   <!-- explanation -->
               </div>
             </div>
-            <!-- <div id="apod-loader" class="container-fluid d-flex justify-content-center align-content-center">
-              <div class="row">
-                <div class="col-2">
-                  <div class="spinner-grow text-light" role="status">
-                    <span class="sr-only">Loading...</span>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div class="spinner-grow text-light" role="status">
-                    <span class="sr-only">Loading...</span>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div class="spinner-grow text-light" role="status">
-                    <span class="sr-only">Loading...</span>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div class="spinner-grow text-light" role="status">
-                    <span class="sr-only">Loading...</span>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div class="spinner-grow text-light" role="status">
-                    <span class="sr-only">Loading...</span>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
         <!-- END BOOTSTRAP SECTION -->
@@ -280,115 +252,36 @@
       <section class="projects">
         <div class="container">
           <div class="row">
-            <div class="col-lg order-2 order-lg-1">
-              <div
-                id="carouselExampleCaptions"
-                class="
-                  w-100
-                  carousel
-                  slide
-                  justify-content-center
-                  overflow-hidden
-                  my-5
-                  py-5
-                "
-                style="height: 250px"
-                data-ride="carousel"
-                data-interval="1500"
-              >
-                <!-- <ol class="carousel-indicators bg-dark">
-                  <li
-                    data-target="#carouselExampleCaptions"
-                    data-slide-to="0"
-                    class="active"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleCaptions"
-                    data-slide-to="1"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleCaptions"
-                    data-slide-to="2"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleCaptions"
-                    data-slide-to="3"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleCaptions"
-                    data-slide-to="4"
-                  ></li>
-                </ol> -->
-                <div class="carousel-inner">
-                  <div class="bg-dark carousel-item active">
-                    <img
-                      src="./assets/img/wbsite1.png"
-                      class="d-block mw-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="./assets/img/wbsite2.png"
-                      class="d-block mw-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="./assets/img/wbsite3.png"
-                      class="d-block mw-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="./assets/img/wbsite4.png"
-                      class="d-block mw-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="./assets/img/wbsite5.png"
-                      class="d-block mw-100"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <a
-                  class="carousel-control-prev bg-dark d-none"
-                  href="#carouselExampleCaptions"
-                  role="button"
-                  data-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a
-                  class="carousel-control-next bg-dark d-none"
-                  href="#carouselExampleCaptions"
-                  role="button"
-                  data-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-            <div class="col order-1 order-lg-2">
+            <div class="col-lg order-1 order-lg-2 pb-5 mb-4">
               <h2 class="line--decoration">Nuestros Proyectos</h2>
               <p>
                 En Galactic Code uno de nuestros principales objetivos es
                 construir proyectos de alta calidad a la medida de tus
                 necesidades. Aquí algunos ejemplos.
               </p>
+            <div class="col-lg order-2 order-lg-2 mt-5 pt-5 ">
+              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/wbsite9.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/wbsiteC.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/wbsite4.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -449,13 +342,15 @@
     </div>
 
     <!-- DECORATION -->
-    <div style="display:none;" id="myDiv2" class="decoration-mountains">
+    <!-- <div style="display:none;" id="myDiv2" class="decoration-mountains"> -->
+    <div style="display: none;" id="myDiv2" class="decoration-mountains">
       <img src="./assets/img/only-mountains 1.svg" alt="" />
     </div>
     <!-- END DECORATION -->
 
     <!-- FOOTER -->
-    <footer style="display:none;" id="myDiv3" class="footer">
+    <!-- <footer style="display:none;" id="myDiv3" class="footer"> -->
+    <footer style="display: none;" id="myDiv3" class="footer">
       <div class="wrapper">
         <div class="footer__content">
           <p>Todos los derechos reservados.™</p>
