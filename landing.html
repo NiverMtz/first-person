@@ -16,6 +16,10 @@
       rel="stylesheet"
     />
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
@@ -87,48 +91,48 @@
       <!-- <section class="place-debug">here a form 1</section> -->
       <section class="container-fluid my-5 py-5">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <h2>¿Te gustaría ver una foto del espacio interestelar?</h2>
             <p>Sólo dame algunos datos:</p>
             <!-- BOOTSTRAP SECTION -->
             <form id="apod-form" class="row g-3">
               <div class="col-md-12 p-3">
                 <label for="inputCity" class="form-label">Un Año</label>
-                <input type="text" class="form-control" id="year" />
+                <input type="text" class="form-control p-5 bg-transparent border-1 border-white" id="year" />
               </div>
               <div class="col-md-12">
                 <label for="inputCity" class="form-label">Un Mes</label>
-                <input type="text" class="form-control" id="month" />
+                <input type="text" class="form-control p-5 bg-transparent border-1 border-white" id="month" />
               </div>
               <div class="col-md-12">
                 <label for="inputCity" class="form-label">Un Día</label>
-                <input type="text" class="form-control" id="day" />
+                <input type="text" class="form-control p-5 bg-transparent border-1 border-white" id="day" />
               </div>
               <div class="col-12">
                 <button type="submit" class="button mt-5">Enviar</button>
               </div>
             </form>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-8 pt-5 mt-5 text-white">
             <div
               id="apod-card"
               class="card text-dark d-none"
               style="width: 100%"
             >
-              <h1 id="apod-title" class="text-sm">
+              <h1 id="apod-title" class="text-sm text-white">
                 <!-- title -->
               </h1>
               <img id="apod-url" src="" class="card-img-top" alt="" />
               <div class="card-body">
-                <p id="apod-date" class="card-text">
+                <p id="apod-date" class="card-text text-white">
                   <!-- date -->
                 </p>
-                <p id="apod-explanation" class="card-text">
+                <p id="apod-explanation" class="card-text text-white">
                   <!-- explanation -->
                 </p>
               </div>
             </div>
-            <div id="apod-loader" class="container-fluid d-flex justify-content-center align-content-center">
+            <!-- <div id="apod-loader" class="container-fluid d-flex justify-content-center align-content-center">
               <div class="row">
                 <div class="col-2">
                   <div class="spinner-grow text-light" role="status">
@@ -156,7 +160,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- END BOOTSTRAP SECTION -->
@@ -405,7 +409,7 @@
         <div class="wrapper">
           <div class="download__content">
             <h2>¿Quieres descargar un fondo de pantalla para tu celular?</h2>
-            <img src="./assets/img/bg-screen.jpg" alt="" style="width: 300px; text-align: center;">
+            <img class="animate__animated animate__flipInY animate__delay-2s" src="./assets/img/bg-screen.jpg" alt="" style="width: 300px; text-align: center;">
               <a class="button" href="./assets/img/bg-screen.jpg" download="">descargar</a>
           </div>
         </div>
