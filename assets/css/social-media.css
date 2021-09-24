@@ -3,7 +3,7 @@
     justify-content: space-evenly;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
     .social-media {
         display: flex;
         flex-direction: column;

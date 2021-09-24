@@ -7,6 +7,7 @@
 @import url(../css/customers.css);
 @import url(../css/projects.css);
 @import url(../css/story.css);
+@import url(../css/download.css);
 @import url(../css/footer.css);
 
 :root {
@@ -68,6 +69,8 @@ h1 {
 h2 {
     font-weight: normal;
     font-size: 24px;
+    position: relative;
+    margin-block-end: 30px;
 }
 
 h3 {
@@ -88,6 +91,11 @@ img {
 
 .icon--size {
     width: 30px;
+}
+
+.line--decoration {
+    border-bottom: 2px solid var(--amarillo);
+    padding-bottom: 30px ;
 }
 
 .form-api {

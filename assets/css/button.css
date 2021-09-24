@@ -4,7 +4,7 @@
     font: var(--buttonFont);
     border-radius: var(--borderRadius);
     padding: 15px;
-    width: 100%;
+    max-width: 100%;
     text-transform: uppercase;
     border: none;
     text-decoration: none;
@@ -20,6 +20,6 @@
 
 @media (min-width: 768px) {
     .button {
-        width:100%;
+        max-width:100%;
     }
 }

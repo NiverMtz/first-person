@@ -16,6 +16,10 @@
     text-align: center;
 }
 
+.story__content img {
+    max-width: 50%;
+}
+
 @media (min-width: 768px) {
     .story__content {
         gap: 50px;
