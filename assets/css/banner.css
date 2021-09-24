@@ -1,40 +1,42 @@
 .banner {
-    height: 100vh;
-    width: 100%;
-    background-image: url(../img/galactic-mountains-nomoon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/galactic-mountains-nomoon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .banner__content {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .banner__logo {
-    font-family: var(--brandFont);
-    font-size: 48px;
-    letter-spacing: 10px;
+  font-family: var(--brandFont);
+  font-size: 48px;
+  letter-spacing: 10px;
 }
 
 .banner__subtitle {
-    font: var(--heading1Font);
+  font: var(--heading1Font);
 }
 
 .banner__icon {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 .banner__icon img {
-    width: 70px;
+  width: 70px;
 }
 
 .banner__icon:hover,
 .banner__icon:active {
-    cursor: pointer;
+  cursor: pointer;
 }
