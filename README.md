@@ -1,5 +1,23 @@
 # projecto-inicial-generation
 
+## Recursos de Apoyo
+
+1. En esta API puedes traer una foto y su información relacionada. Es un API pensada en obtener un foto por cada día del año. Inicio a mediados de los años 90, por lo que la fecha mínima para hacer consultas es 1995-06-16.
+
+    [Astronomy Picture of the Day (APOD)](https://apod.nasa.gov/apod/astropix.html)
+
+2. Documentación para implementar o contribuir en APOD. Así como para entender los parámetros de funcionamiento.
+
+    [Astronomy Picture of the Day (APOD) microservice (Docs)](https://github.com/nasa/apod-api)
+
+3. Documentación de Bootstrap v.4.6.
+
+    [Bootstrap v.4.6 (Docs)](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+
+4. Documentación de Animate.css. Es una librería de CSS para hacer anmiaciones.
+
+    [Animate.css](https://animate.style/)
+
 ## Mockup UX
 
 <img src="GitHub.png" width="50%"></img>
